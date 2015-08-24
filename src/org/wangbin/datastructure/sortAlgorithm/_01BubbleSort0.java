@@ -14,18 +14,18 @@ public class _01BubbleSort0 {
 //		bubbleSort1(aa);
 //		aa = new int[] { 5, 3, 9, 10, 7, 4, 2, 1, 6, 8 };
 //		bubbleSort2(aa);
-//		aa = new int[] { 5, 3, 9, 10, 7, 4, 2, 1, 6, 8 };
-//		bubbleSort3(aa);
 		aa = new int[] { 5, 3, 9, 10, 7, 4, 2, 1, 6, 8 };
-		bubbleSort4(aa);
+		bubbleSort3(aa);
+//		aa = new int[] { 5, 3, 9, 10, 7, 4, 2, 1, 6, 8 };
+//		bubbleSort4(aa);
 		aa = new int[] { 2, 1, 3, 4, 5, 6, 7, 8, 9, 10 };
 //		bubbleSort1(aa);
 //		aa = new int[] { 2, 1, 3, 4, 5, 6, 7, 8, 9, 10 };
 //		bubbleSort2(aa);
 //		aa = new int[] { 2, 1, 3, 4, 5, 6, 7, 8, 9, 10 };
-//		bubbleSort3(aa);
-		aa = new int[] { 2, 1, 3, 4, 5, 6, 7, 8, 9, 10 };
-		bubbleSort4(aa);
+		bubbleSort3(aa);
+//		aa = new int[] { 2, 1, 3, 4, 5, 6, 7, 8, 9, 10 };
+//		bubbleSort4(aa);
 	}
 
 	public static void bubbleSort1(int[] aa) {
@@ -96,7 +96,7 @@ public class _01BubbleSort0 {
 					int temp = aa[j - 1];
 					aa[j - 1] = aa[j];
 					aa[j] = temp;
-					lastSwapPosTemp = j - 1;
+					lastSwapPosTemp = j ;
 				}
 			}
 			if(lastSwapPos == lastSwapPosTemp){

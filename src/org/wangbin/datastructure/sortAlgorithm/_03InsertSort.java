@@ -10,8 +10,10 @@ import java.util.Arrays;
  */
 public class _03InsertSort {
 	public static void main(String[] args) {
-		int[] aa = new int[] { 5, 3, 9, 10, 7, 4, 2, 1, 6, 8 };
-		insertSort(aa);
+	    int []aa = new int[]{5,3,9,10,7,4,2,1,6,8};
+	    insertSort(aa);
+        aa= new int[]{2,1,3,4,5,6,7,8,9,10};
+        insertSort(aa);
 	}
 
 	public static void insertSort(int[] a) {

@@ -9,7 +9,6 @@ public class _07MergeSort {
 		mergeSort(aa);
 //		System.out.println(Arrays.toString(aa));
 		
-		System.out.println(URLEncoder.encode("{mobile:true}"));
 	}
 
 	/**

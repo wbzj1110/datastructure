@@ -22,7 +22,6 @@ public class _01BubbleSort {
 		int count2 = 0;
 		for(int i =0,len=aa.length;i<len;i++){
 			for(int j = i+1; j < len ;j++){
-				int m = aa[i];int n = aa[j];
 				count1++;
 				if(aa[i] > aa[j]){
 					count2++;
@@ -42,7 +41,6 @@ public class _01BubbleSort {
 		for(int i =0,len=aa.length;i<len&&falg;i++){
 			falg=false;
 			for(int j = i+1; j < len ;j++){
-				int m = aa[i];int n = aa[j];
 				count1++;
 				if(aa[i] > aa[j]){
 					falg= true;

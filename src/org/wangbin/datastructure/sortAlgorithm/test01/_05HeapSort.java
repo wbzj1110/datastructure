@@ -1,6 +1,8 @@
 package org.wangbin.datastructure.sortAlgorithm.test01;
 
 import java.util.Arrays;
+import java.util.PriorityQueue;
+import java.util.Queue;
 
 /**
  * 堆排序重复练习
@@ -18,6 +20,10 @@ public class _05HeapSort {
         String str = "123";
         System.out.println(str.replaceAll(" ", ""));
         System.out.println();
+        //priorityQueue本身就是最小排队排序。
+        Queue<Integer> queue = new PriorityQueue<Integer>();
+       
+        
     }
 
     private static void heapSort(int[] bb) {
@@ -28,10 +34,11 @@ public class _05HeapSort {
         }
         System.out.println("第一次构建完大顶堆 : " + Arrays.toString(bb));
         //讲大顶堆的最大值，放入数组的最后位置
-        for(int i = 1;i <n;i++){
+        for (int i = n; i > 1; i--) {
             swap(bb, 1, i);
             headAdjust(bb, 1, i - 1);
         }
+        System.out.println(Arrays.toString(bb));
     }
 
     private static void swap(int[] aa, int i, int j) {

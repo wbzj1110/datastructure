@@ -43,7 +43,7 @@ public class _08QuickSort1 {
 		if (aa[mid] > aa[high]) {
 			swap(aa, mid, high);
 		}
-		if (aa[mid] > aa[low]) {
+		if (aa[mid] > aa[low]) {//因为这个地方
 			swap(aa, mid, low);
 		}
 		int point = aa[low];// 取3个点的中间值

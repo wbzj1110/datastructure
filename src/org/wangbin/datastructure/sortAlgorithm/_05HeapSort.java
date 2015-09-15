@@ -1,6 +1,8 @@
 package org.wangbin.datastructure.sortAlgorithm;
 
 import java.util.Arrays;
+import java.util.PriorityQueue;
+import java.util.Queue;
 
 public class _05HeapSort {
 	public static void main(String[] args) {
@@ -13,6 +15,9 @@ public class _05HeapSort {
 		String str = "123";
 		System.out.println(str.replaceAll(" ", ""));
 		System.out.println();
+		 //priorityQueue本身就是最小排队排序。
+        Queue<Integer> queue = new PriorityQueue<Integer>();
+        
 	}
 
 	private static void heapSort(int[] aa) {
